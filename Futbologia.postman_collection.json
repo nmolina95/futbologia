@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "1ac0f27c-7f4c-45b1-85e3-d45faadf4b8f",
+		"name": "Futbologia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11887956"
+	},
+	"item": [
+		{
+			"name": "Crear Liga",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\" : \"Ligue One\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/liga",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"liga"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Ligas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/liga",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"liga"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Pais",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Francia\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pais",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Paises",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pais",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Equipo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"PSG\",\n    \"liga\": 1,\n    \"pais\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/equipos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"equipos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Equipos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/equipos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"equipos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Equipo ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/equipos/52",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"equipos",
+						"52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Equipo Nombre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/equipos/buscar?nombre=PSG",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"equipos",
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "PSG"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Equipo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"PSG\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/equipos/52",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"equipos",
+						"52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Equipo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/equipos/54",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"equipos",
+						"54"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 9f946f36-eefa-4919-ab7f-01d40d4866cd",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"admin\",\n    \"password\" : \"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "inherit"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
